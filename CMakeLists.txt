@@ -1,15 +1,20 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(dynamixel_mx_64)
-find_package(catkin REQUIRED)
 
-catkin_package(
-    CATKIN_DEPENDS dynamixel_controllers
-)
+find_package(catkin_simple REQUIRED)
+catkin_simple(ALL_DEPS_REQUIRED)
 
-install(DIRECTORY launch
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-  )
+add_definitions(-std=c++11)
 
-install(DIRECTORY config
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-  )
+############
+# BINARIES #
+############
+#cs_add_executable(state_publisher
+#  src/state_publisher.cpp)
+#target_link_libraries(state_publisher ${catkin_LIBRARIES})
+
+##########
+# EXPORT #
+##########
+cs_install()
+cs_export()

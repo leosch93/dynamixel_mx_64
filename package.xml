@@ -1,21 +1,20 @@
-<package>
+<?xml version="1.0"?>
+<package format="2">
   <name>dynamixel_mx_64</name>
-  <version>0.4.1</version>
+  <version>0.0.1</version>
   <description>
-    Example configuration and launch file for dynamixel_motor stack.
+    TODO description
   </description>
+
   <maintainer email="lschai@student.ethz.ch">Leonard Schai</maintainer>
 
   <license>BSD</license>
 
-  <url type="website">http://ros.org/wiki/dynamixel_driver</url>
-
-  <author>Leonard Schai</author>
-
   <buildtool_depend>catkin</buildtool_depend>
-  <run_depend>dynamixel_controllers</run_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
 
-  <export>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>dynamixel_controllers</depend>
 
-  </export>
 </package>
