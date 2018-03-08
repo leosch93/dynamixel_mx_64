@@ -1,4 +1,4 @@
-tilt_controller_1:
+/arm/joint1_position_controller:
     controller:
         package: dynamixel_controllers
         module: joint_position_controller
@@ -11,7 +11,7 @@ tilt_controller_1:
         min: 0
         max: 4095
 
-tilt_controller_3:
+/arm/joint3_position_controller:
     controller:
         package: dynamixel_controllers
         module: joint_position_controller
