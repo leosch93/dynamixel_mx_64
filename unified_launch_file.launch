@@ -19,13 +19,13 @@
     <node name="tilt_controller_spawner_1" pkg="dynamixel_controllers" type="controller_spawner.py"
               args="--manager=dxl_manager
                     --port pan_tilt_port
-                    /arm/joint1_position_controller"
+                    /arm/joint1_position_controller_dynamixel"
               output="screen"/>
 
     <node name="tilt_controller_spawner_3" pkg="dynamixel_controllers" type="controller_spawner.py"
               args="--manager=dxl_manager
                     --port pan_tilt_port
-                    /arm/joint3_position_controller"
+                    /arm/joint3_position_controller_dynamixel"
               output="screen"/>
 
 </launch>

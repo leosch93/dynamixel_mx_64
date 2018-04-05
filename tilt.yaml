@@ -1,4 +1,4 @@
-/arm/joint1_position_controller:
+/arm/joint1_position_controller_dynamixel:
     controller:
         package: dynamixel_controllers
         module: joint_position_controller
@@ -11,7 +11,7 @@
         min: 0
         max: 4095
 
-/arm/joint3_position_controller:
+/arm/joint3_position_controller_dynamixel:
     controller:
         package: dynamixel_controllers
         module: joint_position_controller
